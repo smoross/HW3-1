@@ -18,3 +18,6 @@ def tech_data():
 @app.route('/sites')
 def sites():
 	return render_template('techlinks.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)

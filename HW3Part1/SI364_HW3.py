@@ -44,7 +44,8 @@ def song(artist_name):
     data = json.loads(url.text)
     return render_template('specific_artist.html', results=data['results'])
 
-
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
 
